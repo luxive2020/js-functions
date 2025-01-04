@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Check prime number
+        const number = parseInt(prompt("ENter a number:"));
+        let isPrime = true;
+         
+        //check if number is equal to 1
+        if (number ===1){
+            console.log("1 Not a Prime Number!")
+        }
+        else if (number>1){
+            for (let i = 2; i <= number/2; i++){
+                if(number %i === 0){
+                    isPrime = false;
+                    break;
+                }
+            }
+            if(isPrime){
+                console.log(`${number} is a prime number`);
+            }else {
+                console.log(`${number} is not a prime number`);
+            }
+        }
+        else{
+            console.log('The number is not a prime number')
+        }
+    </script>
+</body>
+</html>
