@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping array</title>
+</head>
+<body>
+        <div class="container"></div>
+        <script>
+            const container = document.querySelector('.container');
+                console.log(container);
+            const fruits = ['Banana', 'Orange', 'Apple',"Pineapple"];
+
+            let fruitLength = fruits.length;
+            let  str = '<ul>'
+            fruits.forEach((fruit) => {
+                str += '<li>'+ fruit+ '</li>'
+            });
+            str += '</ul>';
+            container.innerHTML = str;
+
+
+            
+            
+        </script>
+</body>
+</html>
