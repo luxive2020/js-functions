@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          let sum = 0;
+          let value;
+          while (true){
+            value = +prompt("Enter number in their mutiples:", '');
+            if (!value  || Number(value)%3 !== 0 || Number>24) break;
+            sum += value;
+            
+          }
+          alert(`This is the total sum of the number you entered ${sum}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function addNumInMultiples(factor){
+            let sum = 0;
+            let value;
+          while (true){
+            value = +prompt("Enter number in their mutiples:", '');
+            if (!value  || Number(value)%factor !== 0 || Number>1000) break;
+            sum += value;
+            
+          }
+          alert(`This is the total sum of the number you entered ${sum}`);
+        }
+    </script>
+</body>
+</html>
