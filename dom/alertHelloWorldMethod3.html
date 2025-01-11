@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+    <button id="btn">Click Me Too</button>
+    <button id="btn2">Click Here</button>
+    <script>
+        // the javascript file
+        const btn = document.querySelector('#btn');
+        btn.addEventListener('click', () => {
+            alert("Hello World");
+        });
+        //btn2
+        const btn2 = document.querySelector('#btn2');
+        btn2.addEventListener('click', function(e){
+            e.target.style.background = 'blue';
+            console.log(e.target);
+        })
+    </script>
+</body>
+</html>

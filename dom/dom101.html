@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="display"></div>
+        <div class="controls"></div>
+    </div>
+    <script>
+        const container = document.querySelector("#container");
+        // console.dir(container);
+        // const display = container.firstElementChild;
+        const controls = document.querySelector('.controls');
+        controls.classList.add("new");
+        console.log(controls.getAttribute('class'));
+        para1 = document.createElement("p")
+        para1.setAttribute("id","theDiv");
+        console.log(para1.getAttribute("id"))
+        console.log(para1);
+        para1.innerHTML = 'I love to talk to people about their purpose'
+        para1.style.cssText = "color: blue; background: black";
+      container.insertBefore(para1, controls);
+      
+        console.log(container.innerHTML);
+        
+
+        
+        const display = controls.previousElementSibling;
+        console.log(display);
+    </script>
+</body>
+
+</html>
